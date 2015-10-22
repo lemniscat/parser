@@ -1,4 +1,4 @@
-package parser;
+﻿package parser;
 
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 
@@ -88,11 +88,11 @@ public class gui extends JDialog
         {
             // Establish the connection.
             SQLServerDataSource ds = new SQLServerDataSource();
-            ds.setServerName("RIPHEYSRV\\BASECOMP");
+            ds.setServerName("SRV\\BASECOMP");
             ds.setPortNumber(47634);
             ds.setDatabaseName("pars");
             ds.setPassword("1");
-            ds.setUser("tandemservice задание/parser");
+            ds.setUser("user/parser");
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             con = ds.getConnection();
             if (!con.isClosed())
