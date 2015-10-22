@@ -1,4 +1,4 @@
-package parser;
+﻿package parser;
 
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- * Created by admin on 10.04.2015.
+ * 
  */
 public class SqlInterface
 {
@@ -63,11 +63,11 @@ public class SqlInterface
         {
             // Establish the connection.
             SQLServerDataSource ds = new SQLServerDataSource();
-            ds.setServerName("RIPHEYSRV\\BASECOMP");
+            ds.setServerName("SRV\\BASECOMP");
             ds.setPortNumber(47634);
             ds.setDatabaseName("pars");
             ds.setPassword("1");
-            ds.setUser("tandemservice задание/parser");
+            ds.setUser("user/parser");
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             con = ds.getConnection();
             if (!con.isClosed())
